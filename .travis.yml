@@ -1,5 +1,5 @@
 language: node_js
-node_js: '12'
+node_js: "12"
 cache: yarn
 env:
   global:
@@ -13,7 +13,7 @@ jobs:
         - yarn run prettier-check
         - yarn run eslint
         - yarn run build
-        - eslint -f dist/formatter.js -c ./node_modules/eslint/conf/eslint-all.js -o dump.lsif
+        - eslint -f dist/formatter.js -c ./node_modules/eslint/conf/eslint-all.js -o dump.lsif 'src/**/*.ts'
         - node node_modules/lsif-util/bin/lsif-util validate dump.lsif
         # https://github.com/sourcegraph/lsif-test/issues/4
         # - go get github.com/sourcegraph/lsif-test/cmd/lsif-validate
