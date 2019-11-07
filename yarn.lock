@@ -5613,10 +5613,10 @@ vscode-languageserver-protocol@^3.14.1:
     vscode-jsonrpc "^4.0.0"
     vscode-languageserver-types "3.14.0"
 
-vscode-languageserver-textdocument@^1.0.0-next.2:
-  version "1.0.0-next.2"
-  resolved "https://registry.npmjs.org/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.0-next.2.tgz#0324c50e93c32e39a151ba635a4ac61dbf6aa760"
-  integrity sha512-omA1bS2ENVnhYnenmGGNQjAdxz3FbGgNvGOKrppAS1KxdYrOczxon+AQF0JswRwE0yxwhFwEFDvB4e5earYCww==
+vscode-languageserver-textdocument@^1.0.0-next.5:
+  version "1.0.0-next.5"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.0-next.5.tgz#dbb7a45dd973a19261a7c57ab9a439c40f3799ee"
+  integrity sha512-1jp/zAidN/bF/sqPimhBX1orH5G4rzRw63k75TesukJDuxm8yW79ECStWbDSy41BHGOwSGN4M69QFvhancSr5A==
 
 vscode-languageserver-types@3.14.0:
   version "3.14.0"
