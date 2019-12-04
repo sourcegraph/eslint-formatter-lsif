@@ -50,7 +50,7 @@
     "lsif-util": "^0.2.15",
     "prettier": "^1.19.1",
     "semantic-release": "^15.13.30",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.3"
   },
   "dependencies": {
     "iterare": "^1.2.0",
