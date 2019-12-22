@@ -49,7 +49,7 @@ const extensions: Record<string, string | undefined> = {
 
 const lintMessageToDiagnostic = (lintMessage: eslint.Linter.LintMessage): lsp.Diagnostic => ({
     message: lintMessage.message,
-    code: lintMessage.ruleId || undefined,
+    code: lintMessage.ruleId ?? undefined,
     severity: severities[lintMessage.severity],
     source: 'eslint',
     range: {
@@ -58,8 +58,8 @@ const lintMessageToDiagnostic = (lintMessage: eslint.Linter.LintMessage): lsp.Di
             character: lintMessage.column - 1,
         },
         end: {
-            line: (lintMessage.endLine || lintMessage.line) - 1,
-            character: (lintMessage.endColumn || lintMessage.column) - 1,
+            line: (lintMessage.endLine ?? lintMessage.line) - 1,
+            character: (lintMessage.endColumn ?? lintMessage.column) - 1,
         },
     },
 })
@@ -114,7 +114,7 @@ function* lintResultToLSIF(result: eslint.CLIEngine.LintResult, data: FormatterD
         type: ElementTypes.vertex,
         label: VertexLabels.document,
         uri: pathToFileURL(result.filePath).href,
-        languageId: extensions[path.extname(result.filePath)] || 'javascript',
+        languageId: extensions[path.extname(result.filePath)] ?? 'javascript',
     }
     yield document
 
