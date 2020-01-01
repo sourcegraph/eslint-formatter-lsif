@@ -330,10 +330,10 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@sourcegraph/eslint-config@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.5.2.tgz#0e52e34c267c8025964d8affe2f017305f703cc8"
-  integrity sha512-dOkDybjznL8e+7fZnJxeJDCrpevzpNKQ+LqsFzDcp6qk1XUf+7bGbDNc57ZxMHBc4voGAZtFLxQBcTrqGpyxDw==
+"@sourcegraph/eslint-config@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.5.3.tgz#eec8644baa53828efaf831cff3f96551f651da27"
+  integrity sha512-nkmXvwR7PBh4KDXeOnaaF7xlNaDb+hyddpudwVKRFZwsJvnNqM6pIhRajxiNz8F7GxlvTPgjhQRMtdtV1qpQlg==
   dependencies:
     "@sourcegraph/prettierrc" "^3.0.1"
     "@typescript-eslint/eslint-plugin" "^2.14.0"
