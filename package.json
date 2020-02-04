@@ -42,7 +42,7 @@
     "@sourcegraph/prettierrc": "^3.0.2",
     "@sourcegraph/tsconfig": "^4.0.0",
     "@sourcegraph/tslint-config": "^13.4.0",
-    "@types/eslint": "6.1.7",
+    "@types/eslint": "6.1.8",
     "@types/uuid": "3.4.6",
     "eslint": "^6.8.0",
     "husky": "^3.1.0",
