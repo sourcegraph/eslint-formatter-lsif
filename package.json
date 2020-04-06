@@ -48,7 +48,7 @@
     "husky": "^3.1.0",
     "lsif-protocol": "^0.4.3",
     "lsif-util": "^0.2.15",
-    "prettier": "^2.0.3",
+    "prettier": "^2.0.4",
     "semantic-release": "^15.13.30",
     "typescript": "^3.7.4"
   },
