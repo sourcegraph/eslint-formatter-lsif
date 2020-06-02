@@ -55,6 +55,6 @@
   "dependencies": {
     "iterare": "^1.2.0",
     "uuid": "^7.0.3",
-    "vscode-languageserver-textdocument": "^1.0.0-next.2"
+    "vscode-languageserver-textdocument": "^1.0.1"
   }
 }
