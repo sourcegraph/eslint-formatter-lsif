@@ -46,7 +46,6 @@
     "@types/uuid": "7.0.3",
     "eslint": "^7.2.0",
     "husky": "^3.1.0",
-    "lsif-protocol": "^0.4.3",
     "lsif-util": "^0.2.15",
     "prettier": "^2.0.5",
     "semantic-release": "^15.13.30",
@@ -54,6 +53,7 @@
   },
   "dependencies": {
     "iterare": "^1.2.0",
+    "lsif-protocol": "^0.4.3",
     "uuid": "^7.0.3",
     "vscode-languageserver-textdocument": "^1.0.1"
   }
