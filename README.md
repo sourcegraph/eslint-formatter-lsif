@@ -12,9 +12,9 @@ Outputs diagnostics.
 ## Install
 
 ```
-npm install eslint-formatter-lsif
+npm install --save-dev eslint-formatter-lsif
 # or
-yarn add eslint-formatter-lsif
+yarn add --dev eslint-formatter-lsif
 ```
 
 ## Usage
