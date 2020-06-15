@@ -177,7 +177,8 @@ const formatter = (results: eslint.CLIEngine.LintResult[], data: FormatterData):
         projectRoot: pathToFileURL(process.cwd() + '/').href,
         version: '0.4.0',
         toolInfo: {
-            name: 'lsif-eslint',
+            // eslint-disable-next-line @typescript-eslint/no-require-imports
+            name: require('../package.json').name,
             // eslint-disable-next-line @typescript-eslint/no-require-imports
             version: require('../package.json').version,
             args: process.argv,
