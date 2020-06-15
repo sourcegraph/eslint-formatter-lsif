@@ -12,7 +12,7 @@ import {
     MetaData,
 } from 'lsif-protocol'
 import iterate from 'iterare'
-import uuid from 'uuid/v4'
+import * as uuid from 'uuid'
 import * as path from 'path'
 import { pathToFileURL } from 'url'
 import { TextDocument } from 'vscode-languageserver-textdocument'
@@ -110,7 +110,7 @@ function* lintResultToLSIF(result: eslint.CLIEngine.LintResult, data: FormatterD
     }
 
     const document: Document = {
-        id: uuid(),
+        id: uuid.v4(),
         type: ElementTypes.vertex,
         label: VertexLabels.document,
         uri: pathToFileURL(result.filePath).href,
@@ -133,7 +133,7 @@ function* lintResultToLSIF(result: eslint.CLIEngine.LintResult, data: FormatterD
         }
     }
     const diagnosticResult: DiagnosticResult = {
-        id: uuid(),
+        id: uuid.v4(),
         type: ElementTypes.vertex,
         label: VertexLabels.diagnosticResult,
         result: diagnostics,
@@ -141,7 +141,7 @@ function* lintResultToLSIF(result: eslint.CLIEngine.LintResult, data: FormatterD
     yield diagnosticResult
 
     const documentToDiagnosticResult: textDocument_diagnostic = {
-        id: uuid(),
+        id: uuid.v4(),
         type: ElementTypes.edge,
         label: EdgeLabels.textDocument_diagnostic,
         inV: diagnosticResult.id,
@@ -151,14 +151,14 @@ function* lintResultToLSIF(result: eslint.CLIEngine.LintResult, data: FormatterD
 
     if (codeActions.length > 0) {
         const codeActionResult: CodeActionResult = {
-            id: uuid(),
+            id: uuid.v4(),
             type: ElementTypes.vertex,
             label: 'xcodeActionResult',
             result: codeActions,
         }
         yield codeActionResult
         const documentToCodeActionResult: E11<any, any, any> = {
-            id: uuid(),
+            id: uuid.v4(),
             type: ElementTypes.edge,
             label: 'textDocument/xcodeAction',
             inV: codeActionResult.id,
@@ -170,7 +170,7 @@ function* lintResultToLSIF(result: eslint.CLIEngine.LintResult, data: FormatterD
 
 const formatter = (results: eslint.CLIEngine.LintResult[], data: FormatterData): string => {
     const metadata: MetaData = {
-        id: uuid(),
+        id: uuid.v4(),
         type: ElementTypes.vertex,
         label: VertexLabels.metaData,
         positionEncoding: 'utf-16',
