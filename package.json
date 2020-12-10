@@ -52,7 +52,7 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "iterare": "^1.2.0",
+    "iterare": "^1.2.1",
     "lsif-protocol": "^0.4.3",
     "uuid": "^7.0.3",
     "vscode-languageserver-textdocument": "^1.0.1"
