@@ -45,7 +45,7 @@
     "@types/eslint": "7.2.2",
     "@types/uuid": "7.0.3",
     "eslint": "^7.8.1",
-    "husky": "^3.1.0",
+    "husky": "^6.0.0",
     "lsif-util": "^0.2.15",
     "prettier": "^2.1.2",
     "semantic-release": "^17.0.8",
