@@ -43,7 +43,7 @@
     "@sourcegraph/tsconfig": "^4.0.1",
     "@sourcegraph/tslint-config": "^13.4.0",
     "@types/eslint": "7.2.2",
-    "@types/uuid": "7.0.3",
+    "@types/uuid": "7.0.5",
     "eslint": "^7.8.1",
     "husky": "^3.1.0",
     "lsif-util": "^0.2.15",
