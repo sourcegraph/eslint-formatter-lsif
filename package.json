@@ -47,7 +47,7 @@
     "eslint": "^8.31.0",
     "husky": "^3.1.0",
     "lsif-util": "^0.2.15",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.2",
     "semantic-release": "^17.0.8",
     "typescript": "^3.9.7"
   },
