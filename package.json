@@ -48,7 +48,7 @@
     "husky": "^3.1.0",
     "lsif-util": "^0.2.15",
     "prettier": "^2.8.4",
-    "semantic-release": "^17.0.8",
+    "semantic-release": "^19.0.3",
     "typescript": "^3.9.7"
   },
   "dependencies": {
