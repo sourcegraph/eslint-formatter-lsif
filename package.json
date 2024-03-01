@@ -46,7 +46,7 @@
     "@types/uuid": "8.3.4",
     "eslint": "^8.57.0",
     "husky": "^3.1.0",
-    "lsif-util": "^0.2.15",
+    "lsif-util": "^0.2.17",
     "prettier": "^3.2.5",
     "semantic-release": "^17.0.8",
     "typescript": "^3.9.7"
