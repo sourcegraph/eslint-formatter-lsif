@@ -44,7 +44,7 @@
     "@sourcegraph/tslint-config": "^13.4.0",
     "@types/eslint": "8.56.7",
     "@types/uuid": "8.3.4",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "husky": "^3.1.0",
     "lsif-util": "^0.2.15",
     "prettier": "^3.2.5",
